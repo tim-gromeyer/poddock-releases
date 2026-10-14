@@ -1,22 +1,26 @@
-# Poddock — Release-Artefakte
+# Poddock — release artefacts
 
-Dieses Repository enthält die öffentlich erreichbaren Artefakte der
-Poddock-Releases: **Binär-Tarballs** (Daten, x86_64, aarch64) und die
-**Screenshots** für die AppStream-Metainfo. Es enthält **keinen Quellcode**;
-der Quellcode bleibt privat.
+This repository holds the publicly reachable artefacts of the Poddock
+releases: **binary tarballs** (data, x86_64, aarch64) and the
+**screenshots** for the AppStream metainfo. It contains **no source code**;
+the source stays private.
 
-Die Tarballs werden automatisch vom Release-Workflow des privaten
-Haupt-Repositories hochgeladen.
+The tarballs are uploaded automatically by the release workflow of the
+private main repository.
 
 ## Screenshots (`screenshots/`)
 
-Die AppStream-Metainfo der App verlinkt die Screenshots **tag-gepinnt**:
+The AppStream metainfo of the app links the screenshots **tag-pinned**:
 
 ```
-https://raw.githubusercontent.com/tim-gromeyer/poddock-releases/screenshots-1/screenshots/<name>.png
+https://raw.githubusercontent.com/tim-gromeyer/poddock-releases/screenshots-2/screenshots/<name>.png
 ```
 
-Flathub verlangt für in Git gehostete Bilder ausdrücklich einen **Tag oder
-Commit — keinen Branch** (MetaInfo-Guidelines). Den Tag `screenshots-1` also
-nicht verschieben oder löschen; für neue Bilder einen neuen Tag
-(`screenshots-2`) anlegen und die Metainfo im Haupt-Repository nachziehen.
+Flathub explicitly requires a **tag or commit — not a branch** for images
+hosted in Git (MetaInfo guidelines). So the tag of the current set
+(`screenshots-2`) must not be moved; new images get a new tag
+(`screenshots-3`) and the metainfo in the main repository is moved over in the
+same change. Older tags stay for history, but nothing links to them anymore.
+
+Current set: `01-device.png`, `02-settings.png`, `03-capabilities.png`
+(English UI, 1000x700 window plus shadow).
